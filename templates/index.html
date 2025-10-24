@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Porto Verde Inteligente — Dashboard</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Porto Verde Inteligente</h1>
+    <p>Dashboard | Simulação de sensores — Justiça Climática</p>
+  </header>
+
+  <main>
+    <section id="sensors-list">
+      <h2>Sensores</h2>
+      <div id="cards"></div>
+    </section>
+
+    <section id="controls">
+      <h2>Controles</h2>
+      <button id="btn-simulate">Simular Evento Crítico</button>
+      <p id="last-update">Última atualização: —</p>
+    </section>
+
+    <section id="chart">
+      <h2>Gráfico (PM2.5) - Sensor selecionado</h2>
+      <canvas id="pmChart" width="600" height="240"></canvas>
+      <select id="sensor-select"></select>
+    </section>
+  </main>
+
+  <footer>
+    <small>Protótipo para apresentação — Porto Verde Inteligente</small>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
